@@ -6,19 +6,19 @@
   <thead>
     <tr>
       <th>Todo Item</th>
-      <th>Completed</th>
-      <th colspan="3"></th>
+      <th></th>
     </tr>
   </thead>
 
   <tbody>
     <% @lists.each do |list| %>
-      <tr>
+      <tr <%= list.completed ? 'class=table-success' : nil %>>
         <td><%= list.description %></td>
-        <td><%= list.completed %></td>
-        <td><%= link_to 'Show', list %></td>
-        <td><%= link_to 'Edit', edit_list_path(list) %></td>
-        <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to 'Show', list %>
+          <%= link_to 'Edit', edit_list_path(list) %>
+          <%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>
