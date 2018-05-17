@@ -1,0 +1,10 @@
+<%= form_with(model: list, local: true) do |form| %>
+  <% if list.completed? %>
+    <%= form.check_box :completed, checked: false, style: 'visibility: hidden' %>
+    <%= form.submit 'Redo', class: 'btn btn-warning' %>
+  <% else %>
+    <%= form.check_box :completed, checked: true, style: 'visibility: hidden' %>
+    <%= form.submit 'Complete', class: 'btn btn-success' %>
+  <% end %>
+  <%= link_to 'Delete', list, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
+<% end %>
