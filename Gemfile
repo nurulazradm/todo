@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'rails', '~> 5.1.6'
+gem 'rails', '~> 5.2.4', ">= 5.2.4.2"
 gem 'sqlite3'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
@@ -32,3 +32,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+gem 'nokogiri', '~> 1.10', ">= 1.10.8"
+
