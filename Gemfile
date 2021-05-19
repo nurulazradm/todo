@@ -32,5 +32,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'bootstrap', '~> 4.1', '>= 4.1.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
-gem 'nokogiri', '~> 1.10', ">= 1.10.8"
+gem 'nokogiri', '~> 1.11'
 
